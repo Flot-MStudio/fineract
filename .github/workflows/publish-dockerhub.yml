@@ -2,9 +2,9 @@ name: Fineract Publish to DockerHub
 on:
   push:
     branches:
-      - develop
+      - 1.8.4
     tags:
-      - 1.9.0
+      - 1.8.4
 permissions:
   contents: read
 jobs:
