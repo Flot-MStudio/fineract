@@ -1,4 +1,4 @@
-name: Fineract Publish to DockerHub
+name: Fineract 1.8.4 Publish to DockerHub
 on:
   push:
     branches:
