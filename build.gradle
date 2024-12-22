@@ -108,7 +108,7 @@ allprojects  {
         maven { url 'https://jcenter.bintray.com' }
         // Ajoutez également le référentiel GitHub Packages si nécessaire
         maven {
-            url = uri("https://maven.pkg.github.com/burgstaller/okhttp-digest")
+            url = uri("https://mvnrepository.com/artifact/com.burgstaller/okhttp-digest")
         }
     }
 
