@@ -108,7 +108,7 @@ allprojects  {
         maven { url 'https://jcenter.bintray.com' }
         // Ajoutez également le référentiel GitHub Packages si nécessaire
         maven {
-            url = uri("https://mvnrepository.com/artifact/com.burgstaller/okhttp-digest")
+            url = uri("https://mvnrepository.com/artifact")
         }
     }
 
@@ -518,6 +518,7 @@ configure(project.fineractJavaProjects) {
                 'org.slf4j:slf4j-api',
                 'org.slf4j:log4j-over-slf4j',
                 'org.slf4j:jul-to-slf4j',
+                'com.burgstaller:okhttp-digest:1.10',
                 )
         implementation ("ch.qos.logback:logback-classic") {
             exclude(module: "slf4j-api")
