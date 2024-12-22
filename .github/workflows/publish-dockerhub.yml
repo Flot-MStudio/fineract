@@ -28,7 +28,7 @@ jobs:
         id: extract_branch
       - name: Build the Apache Fineract image
         run: |
-          ./gradlew --no-daemon --console=plain :fineract-provider:jib -x test -x cucumber \
+          ./gradlew --no-daemon --console=plain :fineract-provider:jib -x test -x cucumber -x :fineract-doc:build \
           -Djib.to.auth.username=${{secrets.DOCKER_USER}} \
           -Djib.to.auth.password=${{secrets.DOCKER_PASSWORD}} \
           -Djib.from.platforms=linux/amd64,linux/arm64 \
